@@ -76,7 +76,9 @@ public:
 		//return 0;
 		double lengthError = fiberLength - fiberLength_setPoint;
 		//return (error < threshold) ? 0. : get_gain() * error;
+		cout << "control for muscle: " << get_length_gain() * lengthError << endl;
 		return get_length_gain() * lengthError;
+
 	}
 
 	// Member function for adding the control signal computed above into the
