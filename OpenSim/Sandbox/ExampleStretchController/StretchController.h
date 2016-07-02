@@ -70,8 +70,8 @@ public:
 		double fiberLength = getInputValue<double>(s, "fiberLength");
 		double fiberLength_setPoint = getInputValue<double>(s,
 			"fiberLength_setpoint");
-
-
+		cout << "length and lengthST: " << fiberLength << "  " << fiberLength_setPoint << endl;
+		cout << "gain: " << get_length_gain() << endl;
 		//TODO: Design a control strategy that improves jump height.
 		//return 0;
 		double lengthError = fiberLength - fiberLength_setPoint;
